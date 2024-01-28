@@ -136,7 +136,7 @@ body {
 .sidebar .logo-mobile #btn {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 10;
   transform: translateY(-50%);
   font-size: 35px;
   text-align: center;
@@ -255,9 +255,16 @@ body {
   .header .intro {
     position: relative;
     top: 0;
-    left: 10px;
+    left: 30px;
   }
   .header-img {
     margin-top: 20px;
+  }
+  .sidebar {
+    width: 70px;
+  }
+  .sidebar .logo-mobile #btn {
+    position: absolute;
+    right: 10;
   }
 }
