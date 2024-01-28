@@ -91,9 +91,9 @@ body {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 1px 1px 5px#0000009b;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
-.header button:hover{
+.header button:hover {
   transform: scale(1.1);
   color: var(--secondrycolor);
   background-color: var(--btncolor);
@@ -112,6 +112,7 @@ body {
   top: 0;
   left: 0;
   font-family: var(--primeryfont);
+  box-shadow: 3px 3px 5px #0000009b;
 }
 .sidebar.open {
   width: 250px;
@@ -239,3 +240,16 @@ body {
 }
 
 /* ======== braekpoints =========== */
+@media only screen and (max-width: 500px) {
+  .header {
+    display: block;
+  }
+  .header .intro,
+  .img {
+    width: 100%;
+    padding-left: 25px;
+  }
+  .header .intro h1 {
+    font-size: 40px;
+  }
+}
