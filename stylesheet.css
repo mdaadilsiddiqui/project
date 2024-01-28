@@ -240,7 +240,7 @@ body {
 }
 
 /* ======== braekpoints =========== */
-@media only screen and (max-width: 1080px) {
+@media (max-width: 1080px) {
   .header {
     display: block;
   }
