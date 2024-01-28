@@ -240,16 +240,19 @@ body {
 }
 
 /* ======== braekpoints =========== */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1080px) {
   .header {
     display: block;
   }
   .header .intro,
-  .img {
+  .header-img {
     width: 100%;
     padding-left: 25px;
   }
   .header .intro h1 {
-    font-size: 40px;
+    font-size: 50px;
+  }
+  .header-img {
+    margin-top: 20px;
   }
 }
