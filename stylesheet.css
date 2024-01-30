@@ -63,21 +63,25 @@ body {
 .header .intro h1 {
   font-family: var(--secondryfont);
   text-transform: capitalize;
-  font-size: 55px;
+  font-size: 60px;
   word-spacing: 7px;
   font-weight: 800;
   color: var(--secondrycolor);
   /* text-shadow: 2px 1px 1px#0000009b; */
 }
 .header .intro p {
-  margin: 30px 0px 15px 0px;
+  margin: 10px 0px 15px 0px;
   font-size: 1.3em;
   word-spacing: 4px;
   line-height: 30px;
+  position: relative;
+  top: 60px;
 }
 .header button {
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 60px;
   /* align-items: center; */
   height: 40px;
   width: 250px;
@@ -111,25 +115,98 @@ body {
   }
 }
 .running-icons{
-  height: 100px;
   width: 99%;
+  height: 100px;
   margin: auto;
-  overflow: hidden;
+  /* background-color: #47b5ff; */
+  display: flex;
   position: relative;
-  top: 50px;
+  top: 70px;
+  overflow: hidden;
+}
+.icon-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--secondrycolor);
+  font-size: 45px;
+  animation: animate 40s infinite linear;
+}
+.icon-wrapper .icon-slide{
+  margin-inline: 35px;
+}
+/* ========= about-us ========== */
+.about-us{
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-top: 150px;
+  /* border: 2px solid black; */
+  text-align: center;
+  padding-top: 30px;
+  position: relative;
+  top: 30px;
+}
+
+.about-us h1{
+  text-transform: uppercase;
+  font-family: var(--secondryfont);
+  color: var(--secondrycolor);
+  font-weight: 700;
+  font-size: 40px;
+}
+.about-us h3{
+  text-transform: capitalize;
+  font-size: 22px;
+  color:#0e2954af;
+}
+.about-us-wrapper{
+  /* height: 100%; */
+  width: 100%;
   display: flex;
 }
-.running-icons .icon-wrapper{
-  animation: animate 40s linear infinite;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  /* justify-content: center; */
-  color: #0e2954;
+.about-us .description{
+  /* font-size: 20px;
+  word-spacing: 4px; */
+  text-align: left;
+  margin: 20px;
+  width: 50%;
+  font-size: 19px;
+  line-height: 28px;
+  position: relative;
+  top: 20px;
 }
-.running-icons .icon-wrapper .icon-slide{
-  font-size: 40px;
-  margin-inline: 20px;
+.about-us .about-us-img{
+  width: 50%;
+}
+.about-us .about-us-img img{
+  display: block;
+  width: 90%;
+  position: relative;
+  top: -70px;
+  left: 50px;
+}
+.about-us .description ul{
+  list-style: none;
+  text-transform: capitalize;
+}
+.about-us .description ul li i{
+  color: var(--secondrycolor);
+  font-size: 20px;
+  margin: 5px 5px 0px 0px;
+}
+/* ========== circle "to add design" =========== */
+.circle{
+  width: 1000px;
+  height: 1000px;
+  /* background-color: #47b5ff; */
+  border-radius: 600px;
+  position: absolute;
+  transform: translate(80%, -50%);
+  /* float: right; */
+  background-image: linear-gradient(90deg,#47b5ff7b, transparent);
+  z-index: -1;
 }
 /* ================ sidebar ========== */
 .sidebar {
