@@ -286,7 +286,7 @@ css for all heading in page
   text-align: center;
   font-family: var(--secondryfont);
   text-transform: uppercase;
-  margin-block: 20px;
+  margin-top: 20px;
   font-size: 50px;
   color: var(--secondrycolor);
   font-weight: 700;
