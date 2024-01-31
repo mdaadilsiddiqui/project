@@ -281,6 +281,46 @@ css for all heading in page
   transform: scale(3, 4);
   
 }
+/* ======= courses page ========= */
+.courses-h1{
+  text-align: center;
+  font-family: var(--secondryfont);
+  text-transform: uppercase;
+  margin-block: 20px;
+  font-size: 50px;
+  color: var(--secondrycolor);
+  font-weight: 700;
+}
+.course{
+  width: 85%;
+  /* height: 100px; */
+  margin: auto;
+  margin-top: 40px;
+  /* background-color: #47b5ff; */
+}
+.course h2{
+  text-transform: capitalize;
+  font-size: 35px;
+  font-family: var(--secondryfont);
+  margin-block: 10px;
+  color: var(--secondrycolor);
+
+} 
+.course-wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.vid{
+  width: 32%;
+  height: 250px;
+  border: 2px solid var(--secondrycolor);
+}
+.vid iframe{
+  width: 100%;
+  height: 100%;
+}
 /* ================ sidebar ========== */
 .sidebar {
   min-height: 100%;
