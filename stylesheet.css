@@ -15,19 +15,24 @@
 ::-webkit-scrollbar {
   display: none;
 }
-body {
+html {
   scroll-behavior: smooth;
+}
+body {
   color: var(--primarycolor);
   font-family: var(--primeryfont);
-  background-color: var(--background);
+  background-image: url(background.png);
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 /* ======== home ========== */
 .home {
   width: 100%;
   height: 100vh;
-  background-image: url(background.png);
-  background-position: center center;
-  background-size: cover;
+  
 }
 /* ===== header ===== */
 .header {
@@ -56,7 +61,7 @@ body {
 .header .intro {
   padding: 20px;
   position: relative;
-  top: 50px;
+  top: 70px;
   left: 40px;
   /* background-color: blueviolet; */
 }
@@ -107,24 +112,24 @@ body {
 }
 /* ========= running-icons ========== */
 @keyframes animate {
-  0%{
+  0% {
     transform: translateX(0);
   }
-  100%{
+  100% {
     transform: translateX(-100%);
   }
 }
-.running-icons{
+.running-icons {
   width: 99%;
   height: 100px;
   margin: auto;
   /* background-color: #47b5ff; */
   display: flex;
   position: relative;
-  top: 70px;
+  top: -40px;
   overflow: hidden;
 }
-.icon-wrapper{
+.icon-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -133,42 +138,41 @@ body {
   font-size: 45px;
   animation: animate 40s infinite linear;
 }
-.icon-wrapper .icon-slide{
+.icon-wrapper .icon-slide {
   margin-inline: 35px;
 }
 /* ========= about-us ========== */
-.about-us{
+/* .about-us {
   width: 80%;
   height: 500px;
   margin: auto;
-  margin-top: 150px;
-  /* border: 2px solid black; */
   text-align: center;
   padding-top: 30px;
   position: relative;
-  top: 30px;
+  top: 100px;
 }
-
-.about-us h1{
+css for all heading in page
+.heading {
   text-transform: uppercase;
   font-family: var(--secondryfont);
   color: var(--secondrycolor);
   font-weight: 700;
+  text-align: center;
   font-size: 40px;
 }
-.about-us h3{
+.about-us h3 {
   text-transform: capitalize;
   font-size: 22px;
-  color:#0e2954af;
+  color: #0e2954af;
 }
-.about-us-wrapper{
-  /* height: 100%; */
+.about-us-wrapper {
+  height: 100%;
   width: 100%;
   display: flex;
 }
-.about-us .description{
-  /* font-size: 20px;
-  word-spacing: 4px; */
+.about-us .description {
+  font-size: 20px;
+  word-spacing: 4px;
   text-align: left;
   margin: 20px;
   width: 50%;
@@ -177,36 +181,105 @@ body {
   position: relative;
   top: 20px;
 }
-.about-us .about-us-img{
+.about-us .about-us-img {
   width: 50%;
 }
-.about-us .about-us-img img{
+.about-us .about-us-img img {
   display: block;
   width: 90%;
   position: relative;
   top: -70px;
   left: 50px;
 }
-.about-us .description ul{
+.about-us .description ul {
   list-style: none;
   text-transform: capitalize;
 }
-.about-us .description ul li i{
+.about-us .description ul li i {
   color: var(--secondrycolor);
   font-size: 20px;
-  margin: 5px 5px 0px 0px;
+  margin: 0px 5px 0px 0px;
+  position: relative;
+  top: 3px;
+} */
+/* ======== bca ======= */
+/* .bca{
+  height: 100px;
+  width: 100%;
+  background-color: var(--secondrycolor);
+  /* background-image: url(img1.jpg); */
+  /* background-position: ; */
+  /* margin: auto;
+  margin-block: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 30px var(--secondrycolor);
 }
-/* ========== circle "to add design" =========== */
-.circle{
-  width: 1000px;
-  height: 1000px;
-  /* background-color: #47b5ff; */
-  border-radius: 600px;
-  position: absolute;
-  transform: translate(80%, -50%);
-  /* float: right; */
-  background-image: linear-gradient(90deg,#47b5ff7b, transparent);
-  z-index: -1;
+.bca h1{
+  text-transform: uppercase;
+  font-size: 85px;
+  font-family: var(--secondryfont);
+  color: var(--background);
+  letter-spacing: 5px;
+} */
+/* =========== notes ========= */
+.notes{
+  width: 85%;
+  height: 800px;
+  margin: auto;
+  /* background-color: #0000009b; */
+  margin-block: 40px;
+  position: relative;
+  top: 20px;
+}
+.notes h1{
+    text-transform: uppercase;
+    font-family: var(--secondryfont);
+    color: var(--secondrycolor);
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+  }
+.notes .notes-wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 30px;
+}
+.notes .subject{
+  position: relative;
+  width: 220px;
+  height: 300px;
+  background-color: var(--background);
+  border: 2px solid var(--btncolor);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--secondrycolor);
+}
+.notes .subject i{
+  font-size: 130px;
+}
+.notes .subject h3{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.notes .subject .csa{
+  font-size: 65px;
+  font-style: normal;
+  font-family:sans-serif;  
+}
+.notes .subject img{
+  display: block;
+  width: 100px;
+  transform: scale(3, 4);
+  
 }
 /* ================ sidebar ========== */
 .sidebar {

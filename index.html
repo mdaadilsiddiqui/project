@@ -7,7 +7,7 @@
     <!-- ===== stylesheet ===== -->
     <link rel="stylesheet" href="stylesheet.css">
     <!-- ========= swiper-js css ========= -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
     <!-- ===== googlefonts ====== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
     <!-- ======== section-1 home ========= -->
 
     <!-- ======== Navbar ======== -->
-    <div class="home">
+    <div class="home" id="home">
 
         <div class="sidebar">
             <div class="logo-mobile">
@@ -32,23 +32,23 @@
                 <i class="bx bx-menu" id="btn"></i>
             </div>
             <ul class="nav-list">
-                <li><a href="#">
+                <li><a href="#home">
                         <i class='bx bx-home-alt'></i>
                         <span class="link-name">home</span>
                     </a>
                     <span class="tooltip">home</span>
                 </li>
-                <li><a href="#">
+                <!-- <li><a href="#about-us">
                         <i class='bx bx-grid-alt'></i>
                         <span class="link-name">about-us</span>
                     </a>
                     <span class="tooltip">about-us</span>
-                </li>
-                <li><a href="#">
-                        <i class='bx bx-home-alt'></i>
-                        <span class="link-name">home</span>
+                </li> -->
+                <li><a href="#notes">
+                    <i class='bx bx-receipt' ></i>
+                        <span class="link-name">notes</span>
                     </a>
-                    <span class="tooltip">home</span>
+                    <span class="tooltip">notes</span>
                 </li>
                 <li><a href="#">
                         <i class='bx bx-home-alt'></i>
@@ -107,30 +107,82 @@
         </div>
 
     </div>
+    <!-- <div class="bca">
+
+            <h1>bca</h1>
+    </div> -->
+    <div class="notes" id="notes">
+        <h1>notes</h1>
+        <div class="notes-wrapper">
+            <div class="subject"><i class='bx bxl-c-plus-plus'></i>
+                <h3>c/cpp progamming</h3>
+            </div>
+            <div class="subject"><i class='bx bxl-java'></i>
+                <h3>JAVA</h3>
+            </div>
+            <div class="subject"><i class='bx bxl-microsoft'></i>
+                <h3>operating system</h3>
+            </div>
+            <div class="subject"><i class='bx bx-data'></i>
+                <h3>DSA</h3>
+            </div>
+            <div class="subject"><i class='bx bx-laptop' ></i>
+                <h3>FOC</h3>
+            </div>
+            <div class="subject"><i class="csa">8085</i>
+                <h3>CSA</h3>
+            </div>
+            <div class="subject"><i class='bx bxl-mongodb'></i>
+                <h3>DBMS</h3>
+            </div>
+            <div class="subject"><img src="digital-electronics.png" alt=""></i>
+                <h3>digital electronics</h3>
+            </div>
+            <div class="subject"><i class='bx bx-slideshow'></i>
+                <h3>multimedia</h3>
+            </div><div class="subject"><i class="csa">.NET</i>
+                <h3>visual basics.net</h3>
+            </div>
+            
+        </div>
+    </div>
     <!-- ========== about us ========= -->
-    <div class="about-us">
-        
-            <h1>about-us</h1>
-            <h3>Welcome to Acers - Your Gateway to Knowledge!</h3>
-            <div class="about-us-wrapper">
+    <!-- <div class="about-us" id="about-us">
+
+        <h1 class="heading">about-us</h1>
+        <h3>Welcome to Acers - Your Gateway to Knowledge!</h3>
+        <div class="about-us-wrapper">
             <div class="description">
-                
-                <p>ACERS is an e-learning platform developed by the students of AISHWARYA COLLEGE for the students of AISHWARYA COLLEGE. the aim of developing ACERS is to provide an platform to the students of BCA faculty for every type of study materials required for their studies. <br><br> On ACERS you can find :- <ul>
+
+                <p>ACERS is an e-learning platform developed by the students of AISHWARYA COLLEGE for the students of
+                    AISHWARYA COLLEGE. the aim of developing ACERS is to provide an platform to the students of BCA
+                    faculty for every type of study materials required for their studies. <br><br> On ACERS you can find
+                    :-
+                <ul>
                     <li><i class='bx bx-check-square'></i>notes</li>
                     <li><i class='bx bx-check-square'></i>PYQs</li>
                     <li><i class='bx bx-check-square'></i>career in bca</li>
                     <li><i class='bx bx-check-square'></i>youtube video lectures</li>
-                </ul></p>
+                </ul>
+                </p>
             </div>
             <div class="about-us-img"><img src="ellestration2.png" alt="" srcset=""></div>
         </div>
+    </div> -->
+
     </div>
-    <div class="circle"></div>
 
 </body>
 <!-- ======== javascript ======= -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="swiper-bundle.min.js"></script>
 <script src="app.js"></script>
-
+<script>
+    let swiperAboutus = new swiper('.sub-swiper', {
+        spaceBetween: -24,
+        grabCursor: true,
+        slidesPerVeiw: 'auto',
+        centerdSlides: 'auto',
+    });
+</script>
 
 </html>
