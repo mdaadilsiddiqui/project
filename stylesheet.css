@@ -263,6 +263,18 @@ body {
 }
 
 .notes .notes-wrapper {
+  text-decoration: none;
+  background-color: var(--background);
+  border-radius: 15px;
+}
+.notes .notes-wrapper:hover i{
+  transform: scale(1.2);
+}
+.notes .notes-wrapper:hover h3{
+  transform: scale(1.1);
+}
+
+.notes .note-wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -272,11 +284,10 @@ body {
   margin-top: 30px;
 }
 
-.notes .subject {
+.notes-wrapper .subject {
   position: relative;
   width: 250px;
   height: 300px;
-  background-color: var(--background);
   border: 2px solid var(--btncolor);
   border-radius: 15px;
   display: flex;
@@ -288,11 +299,13 @@ body {
 
 .notes .subject i {
   font-size: 120px;
+  transition: 0.5s;
 }
 
 .notes .subject h3 {
   font-size: 19px;
   text-transform: capitalize;
+  transition: 0.5s;
 }
 
 .notes .subject .csa {
